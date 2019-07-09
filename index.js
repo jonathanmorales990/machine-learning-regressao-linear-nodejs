@@ -30,13 +30,13 @@ csv()
             x.push(parseFloat(linha.Idade)); // Idade é X
             y.push(parseFloat(linha.Valor)); // Valor do Plano é Y
         });
-        criarRegressao(); // Cria a regressão
+        criarRegressao(); // Chama a função de regressão
     });
 
 function criarRegressao() {
     regressionModel = new SLR(x, y); // Instância o modelo
     console.log('Fórmula:', regressionModel.toString(3)); // Modelo criado pela biblioteca ML
-    previsaoSaida();
+    previsaoSaida(); // Chama a função de saída
 }
 
 function previsaoSaida() {
