@@ -35,7 +35,7 @@ csv()
 
 function criarRegressao() {
     regressionModel = new SLR(x, y); // Instância o modelo
-    console.log('Fórmula:', regressionModel.toString(3)); // Fórmula criada pela biblioteca ML
+    console.log('Fórmula:', regressionModel.toString(3)); // Modelo criado pela biblioteca ML
     previsaoSaida();
 }
 
